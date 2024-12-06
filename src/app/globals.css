@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.para-main{
+    gap: 20px;
+}
+

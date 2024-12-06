@@ -3,6 +3,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import { BiSearch } from "react-icons/bi";
 
+
 export const Navber = () => {
   return (
     <div>
@@ -30,18 +31,27 @@ export const Navber = () => {
           </select>
         </div>
       </div>
-      <div className="flex justify-between items-center container mx-auto h-[38px]  border-b mt-10">
+      <div className="flex justify-between items-center container mx-auto h-[38px]  border-b mt-[47px] pb-[23px]">
         <h4 className="text-2xl font-bold	">Exclusive</h4>
         <ul className="flex justify-center items-center gap-12">
-          <li className="text-base font-normal text-black">Home</li>
-          <li className="text-base font-normal text-black">Contact</li>
-          <li className="text-base font-normal text-black">About</li>
-          <li className="text-base font-normal text-black">Sign Up</li>
+          <li className="text-base font-normal text-black">
+            <a href="javascript:;">Home</a>
+          </li>
+          <li className="text-base font-normal text-black">
+            <a href="javascript:;">Contact</a>
+          </li>
+          <li className="text-base font-normal text-black">
+            <a href="javascript:;">About</a>
+          </li>
+          <li className="text-base font-normal text-black">
+            <a href="javascript:;">Sign Up</a>
+          </li>
         </ul>
         <div className="flex justify-center items-center gap-x-4">
           <div className="relative flex justify-center items-center">
             <input
               type="text"
+              name="search"
               className="block w-full relative	 bg-[#F5F5F5] grow py-2.5 pl-5 pr-[70px] text-gray-900 placeholder:text-gray-400 text-[12px] focus:outline-0"
               placeholder="What are you looking for? "
               required
@@ -52,6 +62,7 @@ export const Navber = () => {
           <FaCartShopping className="text-[20px] font-normal" />
         </div>
       </div>
+    
     </div>
   );
 };
